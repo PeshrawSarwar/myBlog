@@ -37,16 +37,16 @@ class User extends Authenticatable
      * @var array
      */
 
-    protected static function boot() {
-        parent::boot();
-        static::created( function ($user) {
-            $user->profile()->create([
-                'user_id' => $user->id,
-            ]);
-             $user->attachRole('user');
-             $user->attachPermissions(['read_profile', 'update_profile', 'read_setting']);
-        });
-    }
+    // protected static function boot() {
+    //     parent::boot();
+    //     static::created( function ($user) {
+    //         $user->profile()->create([
+    //             'user_id' => $user->id,
+    //         ]);
+    //          $user->attachRole('user');
+    //          $user->attachPermissions(['read_profile', 'update_profile', 'read_setting']);
+    //     });
+    // }
 
 
     protected $casts = [
