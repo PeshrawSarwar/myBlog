@@ -12,9 +12,9 @@ class CategorySeeder extends Seeder
     public function run()
     {
         //
-        $category = \App\Category::create([
-            "name"  => "Bloger Days",
-            "slug"  => "bloger-days",
-        ]);
+        // $category = \App\Category::create([
+        //     "name"  => "Bloger Days",
+        //     "slug"  => "bloger-days",
+        // ]);
     }
 }

@@ -14,16 +14,16 @@ class RelationsSeeder extends Seeder
     {
         //
 
-        DB::table('category_post')->insert([
-            'post_id'      => 3,
-            'category_id'  => 4,
+        // DB::table('category_post')->insert([
+        //     'post_id'      => 3,
+        //     'category_id'  => 4,
 
-        ]);
+        // ]);
 
-         DB::table('post_tag')->insert([
-            'post_id'  => 3,
-            'tag_id'   => 5,
+        //  DB::table('post_tag')->insert([
+        //     'post_id'  => 3,
+        //     'tag_id'   => 5,
 
-        ]);
+        // ]);
     }
 }

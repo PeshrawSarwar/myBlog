@@ -13,9 +13,9 @@ class TagSeeder extends Seeder
     {
         //
 
-        $tag = \App\Tag::create([
-            "name"  => "BlogerDays",
-            "slug"  => "bloger-days",
-        ]);
+        // $tag = \App\Tag::create([
+        //     "name"  => "BlogerDays",
+        //     "slug"  => "bloger-days",
+        // ]);
     }
 }
