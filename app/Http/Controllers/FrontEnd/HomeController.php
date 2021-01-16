@@ -61,24 +61,24 @@ class HomeController extends Controller
 
             $blogerDay = Category::with('postWithImage')
                         ->where([
-                            ['id', '4'],
-                            ['slug', 'bloger-days'],
+                            ['id', '1'],
+                            ['slug', 'bloger-day'],
                         ])->get();
             $sport = Category::with('postWithImage')
                         ->where([
-                            ['id', '5'],
+                            ['id', '3'],
                             ['slug', 'sport'],
                         ])->get();
 
             $health = Category::with('postWithImage')
             ->where([
-            ['id', '8'],
+            ['id', '7'],
             ['slug', 'health']
             ])->get();
 
             $life = Category::with('postWIthImage')
             ->where([
-                ['id', '7'],
+                ['id', '4'],
                 ['slug', 'life']
             ])->get();
 
@@ -89,20 +89,20 @@ class HomeController extends Controller
 
             $technology = Category::with('postWIthImage')
             ->where([
-                ['id', '9'],
+                ['id', '6'],
                 ['slug', 'technology']
             ])->get();
 
             $science = Category::with('postWIthImage')
             ->where([
-                ['id', '10'],
+                ['id', '5'],
                 ['slug', 'science']
             ])->get();
 
 
             $cinema = Category::with('postWIthImage')
             ->where([
-                ['id', '11'],
+                ['id', '8'],
                 ['slug', 'cinema']
             ])->get();
 
@@ -257,7 +257,7 @@ class HomeController extends Controller
             ->latest()->paginate(25);
 
 
-    return view('pages.front-end.category-page', compact('category', 'categories', 'post', 'blogerDay', 'sport', 'health', 'life', 'date', 'science', 'cinema', 'images'));
+    return view('pages.front-end.category-page', compact('category', 'categories', 'blogerDay', 'sport', 'health', 'life', 'date', 'science', 'cinema', 'images'));
 
     //    $posts = DB::table('category_post')
     //         ->select('category_id', 'post_id')
