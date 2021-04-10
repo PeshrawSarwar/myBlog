@@ -83,3 +83,7 @@ Route::group(['prefix' => 'admin'], function() {
 
 }); // End Route Group Prefix Admin
 
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
+});
+

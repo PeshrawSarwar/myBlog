@@ -18,7 +18,8 @@
         "laravel/ui": "^2.4",
         "mckenziearts/laravel-notify": "^2.1",
         "nesbot/carbon": "^2.40",
-        "santigarcor/laratrust": "^6.2"
+        "santigarcor/laratrust": "^6.2",
+        "sentry/sentry-laravel": "^2.4"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
